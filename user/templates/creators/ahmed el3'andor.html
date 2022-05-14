@@ -1,0 +1,69 @@
+
+{% extends 'common/master.html' %}
+{% load static %}
+    <title>{% block title %} da7e7 {% endblock %}</title>
+
+
+    
+    {% block content %}
+    <!-- start headder -->
+    <header>
+    <div class="background">
+        {% include "common/navbar.html" %}
+
+        <div class="conP">
+            <div class="container">   
+                <p class="firstP">Ahmed Al-GHhandour ( Al-Duhaih )</p>
+                <p class="secondP">
+                    Ahmed Walid Mohamed Al-Ghandour is an Egyptian researcher and YouTube content creator, known by the name Al-Duhayh after the name of his YouTube channel, <br>and he is one of the prominent in the field of simplification of science or popular science (in English: pop-science), he studied biology at the Faculty of Science at the American University in Cairo, and he is now Master's researcher at the University of Hong Kong.
+
+            <br>Al-Ghandour created his “Al-Duhaih” channel on YouTube in 2014 and began publishing videos centered on simplifying science in an easy way with a bit of comedy. <br>June 2020, to end the contract based on the network's desire.
+
+            <br>In October 2020, the first episodes of his new program, Al Duha Museum, was shown, a cultural comedy program broadcast on Shahid.net."YouTube", the Arab Republic of Egypt.
+                </p>
+                <a href="#">see more</a>
+            </div>
+        </div>
+
+    </div>
+
+    </div> 
+    </header>
+
+    <!-- end the header -->
+
+
+
+    
+
+       <!-- start section items 1/paragraph 2/item -->
+    <div class="item">
+        <div class="contanier">
+            <div class="ContentItem">
+                <p class="firstP">Videos</p>
+                <p class="secondP">occaecat cupidat atoreocca non proident,
+                    and can sounor eocca <br>occaecat cupidat atoreocca non proident,podcaste</p>
+            </div>
+
+            <div class="row Creators">
+
+                {% include 'common/d7e7_content.html' %}
+        
+        </div><!-- end item  -->
+
+        <div class="video">
+            <!-- start section video
+                1/frame
+                -->
+            <div class="container">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/aqKHbCwhA9Y" allowfullscreen></iframe>
+                  </div>
+            </div>
+        </div><!-- end video  -->
+
+    
+
+        {% include "common/footer.html" %}
+
+        {% endblock content %}

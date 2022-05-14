@@ -1,0 +1,55 @@
+/*  global*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Berlin Sans FB";
+
+}
+
+.sign {
+    width: 100%;
+    color: white;
+}
+.sign  {
+    width: 100%;
+    background-image: url(../img/NEW.png);
+height: 100vh;
+background-position: center;
+background-size: cover;
+}
+
+/*  form & paragrph */
+
+.bg .firstP {
+    margin-top: 5%;
+    font-size: 200%;
+}
+
+.bg input {
+    width: 90%;
+}
+
+.bg .link {
+    padding-top: 4%;
+}
+
+.bg a {
+    color: white;
+    text-decoration: none;
+    padding-right: 25%;
+}
+
+.bg button {
+    margin-top: 5%;
+    display: block;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+/*  background*/
+
+.bg img {
+    width: 92%;
+    margin-top: 10%;
+}

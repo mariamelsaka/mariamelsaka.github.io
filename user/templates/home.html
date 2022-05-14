@@ -1,0 +1,115 @@
+{% extends 'common/master.html' %}
+{% load static %}
+
+    <title>{% block title %} home {% endblock %}</title>
+    
+    {% block content %}
+
+    <header class="background">
+        
+        {% include "common/navbar.html" %}
+
+        <div class="headP">
+            <div class="container">
+                <p class="firstP">Science Video</p>
+                <p class="secondP">in the website can watch
+                    Lorem ipsum dolor<br> sit amdoloreoccaecat cupidat atoreocca non proident,
+                    <br> and can sounor eocca podcaste
+                </p>
+                <a href="#">see more</a>
+            </div>
+        </div>
+
+        </div>
+    </header><!-- end the header -->
+
+    <!-- start section Content Creators 
+    1/paragraph 
+    2/item
+    -->
+
+    <div class="contentCreators">
+        <div class="contanier">
+            <div class="ContentItem">
+                <p class="firstP">Content Creators</p>
+                <p class="secondP">occaecat cupidat atoreocca non proident,
+                    and can sounor eocca podcaste</p>
+            </div>
+            <div class="row Creators">
+                <div class="col-lg-3">
+                    <img src="{% static 'img/images (11)1.png' %}">
+                </div>
+                <div class="col-lg-3">
+                    <img src="{% static 'img/images (16)s.png' %}">
+                </div>
+                <div class="col-lg-3">
+                    <img src=" {% static 'img/download (3).png' %}">
+                </div>
+                <div class="col-lg-3">
+                    <img src=" {% static 'img/images.png' %}">
+                </div>
+
+            </div>
+        </div> <!-- end the contentCreators -->
+
+
+        <!-- start section about
+    1/paragraph 
+    2/img
+    -->
+        <div class="about" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p class="firstP">About us</p>
+                        <p class="secondP">No matter what industry you’re in, you could use an About Us page on your
+                            site.
+                            While the four components listed above are necessary for every About Us page, different
+                            industries sometimes take different approaches.
+                            Below, you’ll find 30 of the best About Us pages categorized by industry. Learn from their
+                            successes and adapt some of their strategies when creating your own.
+                        </p>
+
+                    </div>
+                    <div class="col-6 imgAbout">
+                        <img src="{% static 'img/imgAbout.png' %}">
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end about -->
+
+
+
+        <!-- start section contact 
+    1/paragraph 
+    2/icons phone & e-mail
+    -->
+        <div class="contact" id="contact">
+            <div class="container">
+                <div class="contactItem">
+                    <p class="firstP">Cotact</p>
+                    <p class="secondP">No matter what industry you’re in, you could use an About Us page on your
+                        site.<br>
+                        While the four components listed above are necessary for every About Us page, different
+                        industries sometimes take different approaches.
+                        Below,
+                    </p>
+                </div>
+                <div class="row iconsAbout">
+                    <div class="col-6">
+                        <img src="  {% static 'img/icons8-phone-64.png' %}">
+                        <p>+12345679132</p>
+                    </div>
+                    <div class="col-6">
+                        <img src=" {% static 'img/icons8-email-open-48.png' %}">
+                        <p>science.video@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end contact -->
+
+    
+
+        {% include "common/footer.html" %}
+
+        {% endblock content %}

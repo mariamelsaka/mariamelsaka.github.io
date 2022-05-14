@@ -1,0 +1,55 @@
+/* global */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Berlin Sans FB";
+
+}
+
+.login {
+    width: 100%;
+    color: white;
+}
+
+/*  background */
+
+.login  {
+    width: 100%;
+    background-image: url(../img/NEW.png);
+height: 100vh;
+background-position: center;
+background-size: cover;
+}
+/* input & paragraph */
+
+.bg .firstP {
+    margin-top: 18%;
+    font-size: 250%;
+}
+
+.bg .secondP {
+    font-size: 120%;
+}
+
+.bg input {
+    width: 90%;
+}
+
+.bg .link {
+    padding-top: 4%;
+}
+
+.bg a {
+    color: white;
+    text-decoration: none;
+    padding-right: 25%;
+}
+
+.bg button {
+    margin-top: 5%;
+    display: block;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}

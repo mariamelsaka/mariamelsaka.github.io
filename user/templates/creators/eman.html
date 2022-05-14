@@ -1,0 +1,62 @@
+{% extends 'common/master.html' %}
+{% load static %}
+    <title>{% block title %} Al Aspetaliya {% endblock %}</title>
+
+    {% block content %}
+    <header>
+    <div class="background">
+        {% include "common/navbar.html" %}
+        <div class="conP">
+            <div class="container">
+                <p class="firstP">Eman Elemam ( Al Aspetaliya )</p>
+                <p class="secondP">
+                    She is an Egyptian doctor who established a YouTube channel to explain and educate people about rare
+                    diseases. The channel is known as “Al Aspetaliya.” She studied medicine at Mansoura University and
+                    decided to educate people through a YouTube channel that provides various medical content.<br> The
+                    channel achieved great success, as the number of followers of the channel reached To nearly a
+                    million subscribers
+
+                    The channel was also chosen in 2016 as one of the best channels that provide meaningful content
+                    among the 360 ​​channels on YouTube, in addition to its publication of many research and medical
+                    reports on Wikipedia, and it is known to support anyone who publishes research or provides medical
+                    information,<br> any warrior or interested in any kind of disease
+                </p>
+                <a href="#">see more</a>
+            </div>
+        </div>
+
+    </div>
+    </div>
+</header>
+    <!-- end the header -->
+
+    <div class="item">
+        <!-- start section items 
+    1/paragraph 
+    2/item 
+    -->
+        <div class="contanier">
+            <div class="ContentItem">
+                <p class="firstP">Videos</p>
+                <p class="secondP">occaecat cupidat atoreocca non proident,
+                    and can sounor eocca <br>occaecat cupidat atoreocca non proident,podcaste</p>
+            </div>
+            <div class="row Creators">
+                {% include 'common/eman_content.html' %}
+                
+            </div><!-- end item  -->
+
+            <div class="video">
+                <!-- start section video
+                1/frame
+                -->
+                <div class="container">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/AVqLvrO832g"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div><!-- end video  -->
+            {% include "common/footer.html" %}
+
+            {% endblock content %}

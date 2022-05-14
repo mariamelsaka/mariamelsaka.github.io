@@ -1,0 +1,66 @@
+{% extends 'common/master.html' %}
+{% load static %}
+    <title>{% block title %} egychology {% endblock %}</title>
+
+    {% block content %}
+    <header>
+    <div class="background">
+        {% include "common/navbar.html" %}
+
+        <div class="conP">
+            <div class="container">
+                <p class="firstP">Ahmed Samir ( Egygchology )</p>
+                <p class="secondP">Ahmed Samir Ead
+                    @ahmedsamiread
+                    Founder and Host of the Egychology channel on
+                    <br>@Youtube
+                    . Mechanical Engineering PhD Candidate at
+                    <br>@UAlberta
+                    . Podcast Host. I enjoy learning about the world.
+                    <br>Assistant Professor at the University in Cairo.
+                    <br>He is studying Masters in Mechanical Engineering at the University of Alberta in Canada, and
+                    holds a Bachelor's degree in Mechanical Engineering from The University in Cairo.
+                    It offers educational videos in psychology, philosophy, biology, physics,
+                    <br>and mathematics, as well as videos, mechanics, higher quantum, smoking, and philosophical
+                    paradoxes, as well.
+                    <br>Founder of the educational channel "Egyology" on the channel "YouTube", the Arab Republic of
+                    Egypt.
+                </p>
+                <a href="#">see more</a>
+            </div>
+        </div>
+
+    </div>
+    </div> 
+</header>
+    <!-- end the header -->
+
+    <div class="item">
+        <!-- start section items 
+    1/paragraph 
+    2/item 
+    -->
+        <div class="contanier">
+            <div class="ContentItem">
+                <p class="firstP">Videos</p>
+                <p class="secondP">occaecat cupidat atoreocca non proident,
+                    and can sounor eocca <br>occaecat cupidat atoreocca non proident,podcaste</p>
+            </div>
+            <div class="row Creators">
+                {% include 'common/egy_content.html' %}
+            </div><!-- end item  -->
+
+            <div class="video">
+                <!-- start section video
+                1/frame
+                -->
+                <div class="container">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pxMfZCZ7NDY"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div><!-- end video  -->
+            {% include "common/footer.html" %}
+
+            {% endblock content %}

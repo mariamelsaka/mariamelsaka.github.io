@@ -1,0 +1,155 @@
+/* global */
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Berlin Sans FB";
+
+}
+
+/* header */
+
+.background nav .collapse {
+    padding-top: 20px;
+}
+
+nav ul li {
+    font-size: 110%;
+    padding-right: 40px;
+}
+
+nav a img {
+    width: 60px;
+    padding-top: 40px;
+}
+
+.background {
+    background-image: url(../img/backgroundHome.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 120vh;
+}
+
+.background .headP .firstP {
+    font-size: 240%;
+    padding-top: 5%;
+}
+
+.background .headP .secondP {
+    font-size: 120%;
+}
+
+.background .headP a {
+    color: white;
+}
+
+/* Content Creators */
+
+
+.contentCreators {
+    color: black;
+    width: 100%;
+    overflow: hidden;
+}
+
+.contentCreators .ContentItem p {
+    color: black;
+    text-align: center;
+}
+
+.contentCreators .firstP {
+    font-size: 220%;
+}
+
+.contentCreators .secondP {
+    font-size: 120%;
+}
+
+.contentCreators .Creators img {
+    width: 99%;
+    transition: .5s;
+    margin-bottom: 50px;
+
+}
+
+.contentCreators .Creators img:hover {
+    transform: scale(1.2);
+}
+/* about */
+
+.about {
+    background-image: url(../img/about.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about .imgAbout img {
+    width: 70%;
+    padding-top: 15%;
+    margin-left: 20%;
+}
+
+.about .firstP {
+    padding-top: 15%;
+}
+
+/* contact */
+
+
+.contact .contactItem .firstP {
+    font-size: 110;
+    color: black;
+    padding-top: 8%;
+}
+
+.contact .contactItem .secondP {
+    color: black;
+}
+
+.contact {
+    padding-bottom: 5%;
+}
+
+.contact .iconsAbout p {
+    color: black;
+    display: inline-block;
+    font-size: 110%;
+    padding-left: 10px;
+
+}
+
+.contact .iconsAbout img {
+    width: 50px;
+}
+
+/* footer */
+
+
+footer {
+    background-color: #17252E;
+}
+
+footer .collapse {
+    margin-top: -7 px;
+}
+
+footer nav a img {
+    margin-top: -20px;
+}
+
+/* responsive */
+
+@media(max-width:700px) {
+    .imgAbout img {
+        width: 1px;
+        height: 1px;
+    }
+
+    nav a img {
+        margin-top: -20px;
+    }
+}
