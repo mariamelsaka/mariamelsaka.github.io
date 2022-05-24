@@ -1,0 +1,72 @@
+.card-header img{
+    width:87%;
+    height:250px;
+    margin:20px;
+    margin-top: 40px;
+    border-radius:10px;
+    display:inline;
+}
+body{
+    background-color:#5e72e4;
+}
+
+.describtion{
+    display:inline;
+}
+textarea{
+    width: 105%;
+    height: 200px;
+    border:none;
+    margin-bottom: 10px;
+}
+.describtion h4{
+    padding-top: 40px;
+}
+.describtion .btn{
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-right: 2%;
+}
+.btn{
+    background-color: #5e72e4;
+}
+
+/* end page edit&delete contact creator */
+.imagePost img{
+width:100%;
+border-radius: 15px 15px 0px 0;
+height:200px;
+
+}
+.box{
+    margin-top: 20px;
+    width:100%;
+    margin-bottom: 20px;
+}
+.describtionPost{
+    padding:10%;
+
+}
+.describtionPost input{
+    margin-bottom: 10px;
+}
+.superBox{
+    width:95%;
+    margin-left:25px
+}
+/* end edit&delete video*/
+
+.editBox{
+    width:95%;
+
+margin-left: 25%;    
+overflow: hidden;
+}
+
+.describtionBox input{
+    margin-bottom: 15px;
+}
+.describtionBox button{
+    margin-bottom: 20px;
+}
+

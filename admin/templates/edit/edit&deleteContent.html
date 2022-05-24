@@ -7,7 +7,7 @@
   
   <link id="pagestyle" href="{% static 'dashboard/css/argon-dashboard.css' %}" rel="stylesheet" />
   <link id="pagestyle" href="{% static './css/Untitled-1.css' %}" rel="stylesheet" />
-  <title>Add-Delete (Admin) </title>
+  <title>Edit-Delete (Content Creators) </title>
 </head>
 
 <body>
@@ -27,9 +27,9 @@
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
             <li class="breadcrumb-item text-sm"><a class="opacity-5 text-white" href="javascript:;">Pages</a></li>
-            <li class="breadcrumb-item text-sm text-white active" aria-current="page">Add-Delete (Admin)</li>
+            <li class="breadcrumb-item text-sm text-white active" aria-current="page">Edit-Delete (Content Creators)</li>
           </ol>
-          <h6 class="font-weight-bolder text-white mb-0">Add-Delete (Admin)</h6>
+          <h6 class="font-weight-bolder text-white mb-0">Edit-Delete (Content Creators)</h6>
         </nav>
         <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
           <div class="ms-md-auto pe-md-3 d-flex align-items-center">
@@ -115,102 +115,90 @@
     <!--END navbar two-->
 
 
-
-
-
     <div class="container-fluid">
 
-      <!--  add video -->
+      <!--  Add Podcast section -->
 
-      <div class="row mt-4">
-        <div class="col-lg-12 mb-lg-0 mb-4 align-item-center">
+      
+
+        <div class="col-lg-12 mt-3 mb-lg-0 mb-4 align-item-center">
           <div class="card z-index-2 h-100">
-            <div class="card-header pb-0 pt-3 bg-transparent">
-              <form>
-                <h4>Add Admin</h4>
+            <div class="card-header pb-0 pt-0 bg-transparent">
+              <div class="row">
+                <div class="col-lg-3">
+              <img src="{% static 'dashboard/img/images (11)1.png' %}"></div>
+              <div class="describtion col-lg-8">
+              <h4>Ahmed Samir ( Egygchology )
 
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Name</label>
+              </h4>
+              <p>Ahmed Samir Ead @ahmedsamiread Founder and Host of the Egychology channel on
+                @Youtube . Mechanical Engineering PhD Candidate at
+                @UAlberta . Podcast Host. I enjoy learning about the world.
+                Assistant Professor at the University in Cairo.
+                He is studying Masters in Mechanical Engineering at the University of Alberta in Canada, and holds a Bachelor's degree in Mechanical Engineering from The University in Cairo. It offers educational videos in psychology, philosophy, biology, physics,
+                and mathematics, as well as videos, mechanics, higher quantum, smoking, and philosophical paradoxes, as well.
+                Founder of the educational channel "Egyology" 
+                on the channel "YouTube", the Arab Republic of Egypt.</p>
+                <button class="btn btn-dark">Edit</button>
+                <button class="btn btn-dark">Delete</button>
+
+              </div>
+            </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-12 mt-3 mb-lg-0 mb-4 align-item-center">
+          <div class="card z-index-2 h-100">
+            <div class="card-header pb-0 pt-0 bg-transparent">
+              <div class="row">
+                <div class="col-lg-3">
+              <img src="{% static 'dashboard/img/images (16)s.png' %}"></div>
+              <div class="describtion col-lg-8">
+              <h4>Eman Elemam ( Al Aspetaliya )</h4>
+              <p>She is an Egyptian doctor who established a YouTube channel to explain and educate people about rare diseases. The channel is known as “Al Aspetaliya.” She studied medicine at Mansoura University and decided to educate people through a YouTube channel that provides various medical content.
+                The channel achieved great success, as the number of followers of the channel reached To nearly a million subscribers The channel was also chosen in 2016 as one of the best channels that provide meaningful content among the 360 ​​channels on YouTube, in addition to its publication of many research and medical reports on Wikipedia, and it is known to support anyone who publishes research or provides medical information,
+                any warrior or interested in any kind of disease</p>
+                <button class="btn btn-dark">Edit</button>
+                <button class="btn btn-dark">Delete</button>
+
+              </div>
+            </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-12 mt-3 mb-lg-6 mb-4 align-item-center">
+          <div class="card z-index-2 h-100">
+            <div class="card-header pb-0 pt-0 bg-transparent">
+              <div class="row">
+                <div class="col-lg-3">
                   
-                  <input type="text" class="form-control">
-                  <div class="mb-3 ">
-                    <label for="exampleInputEmail1" class="form-label des "> Email</label>
-                    <input type="text" class="form-control">
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">ID</label>
-                      <input type="text" class="form-control">
-                      <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Password</label>
-                        <input type="text" class="form-control">
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Phone</label>
-                          <input type="text" class="form-control">
-                          <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Address</label>
-                            <input type="text" class="form-control">
-                      <div class="mb-3">
-                        <br>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
+              <img src="{% static 'dashboard/img/images (12)1.png' %}"></div>
+              <div class="describtion col-lg-8">
+              <h4>Ahmed Al-GHhandour ( Al-Duhaih )
+
+              </h4>
+              <p>Ahmed Walid Mohamed Al-Ghandour is an Egyptian researcher and YouTube content creator, known by the name Al-Duhayh after the name of his YouTube channel,
+                and he is one of the prominent in the field of simplification of science or popular science (in English: pop-science), he studied biology at the Faculty of Science at the American University in Cairo, and he is now Master's researcher at the University of Hong Kong.
+                Al-Ghandour created his “Al-Duhaih” channel on YouTube in 2014 and began publishing videos centered on simplifying science in an easy way with a bit of comedy.
+                June 2020, to end the contract based on the network's desire.
+                In October 2020, the first episodes of his new program, Al Duha Museum, was shown, a cultural comedy program broadcast on
+                Shahid.net."YouTube", the Arab Republic of Egypt.</p>
+                <button class="btn btn-dark">Edit</button>
+                <button class="btn btn-dark">Delete</button>
+
+              </div>
+            </div>
+
             </div>
           </div>
         </div>
       </div>
-      
-    </div>
-    
-  </main>
 
-  <div class="container-fluid">
 
-    <!--  add video -->
-
-    <div class="row mt-4">
-      <div class="col-lg-12 mb-lg-0 mb-4 align-item-center">
-        <div class="card z-index-2 h-100">
-          <div class="card-header pb-0 pt-3 bg-transparent">
-            <form>
-              <h4>Delete Admin</h4>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Select Admin to delete</label>
-                
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Open this select menu</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Name</label>
-                
-                <input type="text" class="form-control">
-                <div class="mb-3 ">
-                  <label for="exampleInputEmail1" class="form-label des "> Email</label>
-                  <input type="text" class="form-control">
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">ID</label>
-                    <input type="text" class="form-control">
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Password</label>
-                      <input type="text" class="form-control">
-                      <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Phone</label>
-                        <input type="text" class="form-control">
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Address</label>
-                          <input type="text" class="form-control">
-                    <div class="mb-3">
-                      <br>
-                      <button type="submit" class="btn btn-primary">Delete</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-  </div>
-  
-</main>
 </body>
 
 </html>

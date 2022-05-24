@@ -14,6 +14,9 @@ def add_admin(request):
 def add_video(request):
     return render(request,"add/add_video.html")
 
+def add_content(request):
+    return render(request,"add/add_content.html")
+
 
 
 def admin_profile(request):
@@ -21,3 +24,15 @@ def admin_profile(request):
 
 def dashboard(request):
     return render(request,"dashboard.html")
+
+def edit_content(request):
+    return render(request,"edit/edit&deleteContent.html")
+
+def edit_content2(request):
+    return render(request,"edit/edit&deleteContent2.html")
+
+def edit_post(request):
+    return render(request,"edit/edit&deletePost.html")
+
+def edit_post2(request):
+    return render(request,"edit/edit&deletePost2.html")

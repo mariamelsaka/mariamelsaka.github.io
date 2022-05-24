@@ -4,18 +4,14 @@
 
 <head>
   <meta charset="utf-8" />
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link id="pagestyle" href="{% static 'dashboard/css/argon-dashboard.css' %}" rel="stylesheet" />
-  <link id="pagestyle" href="{% static './css/Untitled-1.css' %}" rel="stylesheet" />
-  <title>Add-Delete (Admin) </title>
+  <title>Add Content Creators </title>
+
 </head>
 
 <body>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  
-
-  <div class="color bg-primary position-absolute w-100"></div>
+  <div class="min-height-300 bg-primary position-absolute w-100"></div>
 
   <main class="main-content position-relative border-radius-lg ">
 
@@ -27,9 +23,9 @@
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
             <li class="breadcrumb-item text-sm"><a class="opacity-5 text-white" href="javascript:;">Pages</a></li>
-            <li class="breadcrumb-item text-sm text-white active" aria-current="page">Add-Delete (Admin)</li>
+            <li class="breadcrumb-item text-sm text-white active" aria-current="page">Add Content Creators</li>
           </ol>
-          <h6 class="font-weight-bolder text-white mb-0">Add-Delete (Admin)</h6>
+          <h6 class="font-weight-bolder text-white mb-0">Add Content Creators</h6>
         </nav>
         <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
           <div class="ms-md-auto pe-md-3 d-flex align-items-center">
@@ -127,27 +123,21 @@
           <div class="card z-index-2 h-100">
             <div class="card-header pb-0 pt-3 bg-transparent">
               <form>
-                <h4>Add Admin</h4>
-
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Name</label>
-                  
                   <input type="text" class="form-control">
-                  <div class="mb-3 ">
-                    <label for="exampleInputEmail1" class="form-label des "> Email</label>
+
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">source picture</label>
                     <input type="text" class="form-control">
+
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">ID</label>
+                      <label for="exampleInputEmail1" class="form-label">link</label>
                       <input type="text" class="form-control">
                       <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Password</label>
+                        <label for="exampleInputEmail1" class="form-label">Description</label>
                         <input type="text" class="form-control">
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Phone</label>
-                          <input type="text" class="form-control">
-                          <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Address</label>
-                            <input type="text" class="form-control">
+
                       <div class="mb-3">
                         <br>
                         <button type="submit" class="btn btn-primary">Submit</button>
@@ -156,61 +146,8 @@
           </div>
         </div>
       </div>
-      
     </div>
-    
   </main>
-
-  <div class="container-fluid">
-
-    <!--  add video -->
-
-    <div class="row mt-4">
-      <div class="col-lg-12 mb-lg-0 mb-4 align-item-center">
-        <div class="card z-index-2 h-100">
-          <div class="card-header pb-0 pt-3 bg-transparent">
-            <form>
-              <h4>Delete Admin</h4>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Select Admin to delete</label>
-                
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Open this select menu</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Name</label>
-                
-                <input type="text" class="form-control">
-                <div class="mb-3 ">
-                  <label for="exampleInputEmail1" class="form-label des "> Email</label>
-                  <input type="text" class="form-control">
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">ID</label>
-                    <input type="text" class="form-control">
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Password</label>
-                      <input type="text" class="form-control">
-                      <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Phone</label>
-                        <input type="text" class="form-control">
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Address</label>
-                          <input type="text" class="form-control">
-                    <div class="mb-3">
-                      <br>
-                      <button type="submit" class="btn btn-primary">Delete</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-  </div>
-  
-</main>
 </body>
 
 </html>

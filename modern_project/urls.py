@@ -22,4 +22,4 @@ urlpatterns = [
     path('user/',include('user.urls')),
     path('Admin/',include('admin.urls')),
 ] 
-urlpatterns+=static(settings.MEDIA_ROOT, document_root=settings.MEDIA_ROOT)
+#urlpatterns+=static(settings.MEDIA_ROOT, document_root=settings.MEDIA_ROOT)

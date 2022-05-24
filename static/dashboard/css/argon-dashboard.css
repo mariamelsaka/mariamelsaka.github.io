@@ -115,7 +115,10 @@ h6,
   line-height: 1.2;
   color: #344767;
 }
-
+.addAdmi{
+  background-color:#0057f7;
+  height:90rem;
+background-repeat: repeat;}
 h1,
 .h1 {
   font-size: calc(1.425rem + 2.1vw);

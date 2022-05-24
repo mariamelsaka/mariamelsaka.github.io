@@ -14,7 +14,7 @@
 .sign  {
     width: 100%;
     background-image: url(../img/NEW.png);
-height: 100vh;
+height: 900px;
 background-position: center;
 background-size: cover;
 }
@@ -22,17 +22,28 @@ background-size: cover;
 /*  form & paragrph */
 
 .bg .firstP {
-    margin-top: 5%;
+    margin-top: 10%;
     font-size: 200%;
 }
 
-.bg input {
+/* .bg input {
     width: 90%;
+} */
+
+#gender{
+    margin-top: 20px;
+    margin-right: 20px;
+}
+#gender input{
+    
+    margin-left: 20px;
 }
 
 .bg .link {
     padding-top: 4%;
 }
+
+
 
 .bg a {
     color: white;
