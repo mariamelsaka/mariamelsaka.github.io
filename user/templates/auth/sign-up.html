@@ -22,63 +22,60 @@
 
                 <!-- form -->
 
-                <form class="bg col-lg-6">
+                <form class="bg col-lg-6" action ="register" method="POST" >
+                    {% csrf_token %}  
                     <p class="firstP">Welcome <br>In Science Video</p>
-
                     <div class="form-group">
                         <label>first name</label>
-                        <input class="form-control" placeholder="Enter firstname">
+                        <input class="form-control" name='first_name' placeholder="Enter firstname" required>
                     </div>
-
                     <div class="form-group">
                         <label>last name</label>
-                        <input class="form-control" placeholder="Enter lastname">
+                        <input class="form-control" name='last_name' placeholder="Enter lastname" required>
                     </div>
                     
-                    <div class="form-group">
-                        <label>Address</label>
-                        <input class="form-control" placeholder="Enter Your Address">
-                    </div>
-
                     <div class="form-group">
                         <label>Email</label>
-                        <input class="form-control" placeholder="Enter Your Email">
+                        <input class="form-control" name='email' placeholder="Enter Your Email" required>
                     </div>
-
                     <div class="form-group">
                         <label>User name</label>
-                        <input class="form-control" placeholder="Enter your user name">
+                        <input class="form-control" name='username' placeholder="Enter your user name"required>
                     </div>
-
                     <div class="form-group">
                         <label>date of birth </label>
-                        <input class="form-control" type="date" placeholder="Enter Your Address">
+                        <input class="form-control" name='dateofbirth' type="date" placeholder="Enter Your Address" required>
                     </div>
-
-                    
                     <div class="form-group">
-                        <label>Password</label>
-
-                        <input class="form-control" placeholder="Enter Password">
+                        <label>Password</label> 
+                        <input class="form-control" name='psw'type="password" placeholder="Enter Password"  required> 
                     </div>
-
                     <div class="form-group">
-                        <label>Re-type Password</label>  
-                        <input class="form-control" type="password" placeholder="Retype Password"  required> 
-                        </div>
-
+                    <label>Re-type Password</label>  
+                    <input class="form-control" name='psw_repeat'type="password" placeholder="Retype Password"  required> 
+                    </div>
                     <div class="form-group">
                         <label>Phone Number</label>
-                        <input class="form-control" placeholder="Enter Number">
+                        <input class="form-control" name='phone_number' placeholder="Enter Number" required>
+                    </div>
+                    <div class="form-group">
+                        <label>gender</label>
+                        <input class="form-control" name='gender' placeholder="Enter gender" required>
                     </div>
                     
-                    <div id="gender" class="form-group">
-                        
-                        <input  type="radio" name="gender" required> male
-                        <input  type="radio" name="gender" required> female
-                    </div>
+                    
+                    
 
-                    <button class="btn btn-dark">login</button>
+                    
+                    
+                        
+                        
+                        <a href="{% url 'login' %}" class="a_account"> login</a>
+                    
+                    <button class="btn btn-dark">submit</button>
+                    {% comment %} <button type="submit"class='registerbtn'>submit</button>  {% endcomment %}
+                    
+                    
                 </form>
                 <!-- background -->
 
@@ -87,6 +84,14 @@
             </div>
 
 
+        </div>
+        <div>
+            {%for message in messages%} <!--عشان نطلع مسج لليوزر بالايرور-->>
+            <h2 style= "color: black;">
+                {{ message }}
+        
+            </h2>
+            {%endfor %}
         </div>
 </body>
 

@@ -43,7 +43,7 @@
      </div>
      <p class="cursor-pointer" style="color: white;">
        <ion-icon name="log-out-outline"></ion-icon>
-       Logout
+       <a href="{%url 'logout' %}">Logout</a>
    </p>
      <ul class="navbar-nav  justify-content-end">
        
@@ -73,45 +73,33 @@
 
 <!-- End Navbar number one -->
 
-<!-- navbar number two -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
- <div class="container-fluid">
-   <a class="navbar-brand" href="dashboard">Dashboard</a>
-   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-     <span class="navbar-toggler-icon"></span>
-   </button>
-   <div class="collapse navbar-collapse" id="navbarNav">
-     <ul class="navbar-nav">
-       <li class="nav-item">
-         <a class="nav-link active" aria-current="page" href="add_video">Add Video</a>
-       </li>
-       <li class="nav-item">
-         <a class="nav-link" href="add_podcast">Add Podcast</a>
-       </li>
-       <li class="nav-item">
-         <a class="nav-link" href="add_admin">Add-Delete (Admin) </a>
-       </li>
-       <li class="nav-item">
-         <a class="nav-link" href="add_content">Add (Content Creators) </a>
-       </li>
-       <li class="nav-item">
-         <a class="nav-link" href="edit_content">Edit-Delete (Content Creators) </a>
-       </li>
-       <li class="nav-item">
-         <a class="nav-link" href="edit_post">Edit-Delete (Video) </a>
-       </li>
-       <li class="nav-item">
-         <a class="nav-link" href="edit_post1">Edit-Delete (Podcast) </a>
-       </li>
-       <li class="nav-item">
-         <a class="nav-link" href="admin_profile">Profile Admin </a>
-       </li>
-     </ul>
-   </div>
- </div>
-</nav>
-<!--END navbar two-->
+  <!-- navbar number two -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="add_video_content">Add Video</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="add_content_creators">Add (Content Creators) </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="show_content_creators">Content Creators</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="show_video">Video</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--END navbar two-->
 
 
 
@@ -124,23 +112,36 @@
         <div class="col-lg-12 mb-lg-0 mb-4 align-item-center">
         <div class="card z-index-2 h-100">
             <div class="card-header pb-0 pt-3 bg-transparent">
-            <form>
+
+
+              <form action="add_video" method="POST">
+                {% csrf_token %}
                 <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Video title</label>
+                <input type="text" class="form-control" name="title">
 
-                <input type="text" class="form-control">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label des "> Video description</label>
-                    <input type="text" class="form-control">
+                    <input type="text" name="description" class="form-control" required>
+                    
                     <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Video url</label>
-                    <input type="text" class="form-control">
+                    <input type="text" name="video_url" class="form-control" required >
+
+                    <label for="exampleInputEmail1" class="form-label">Content Creator Name</label>
+                    <input type="text" name="content_creator_name" class="form-control"  required>
+
+                    <label for="exampleInputEmail1" class="form-label">View</label>
+                    <input type="text" name="views" class="form-control" required >
 
                     <div class="mb-3">
 
                         <br>
                         <button type="submit" class="btn btn-primary">Submit</button>
             </form>
+
+
+
             </div>
         </div>
         </div>

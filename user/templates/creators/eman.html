@@ -41,21 +41,16 @@
                 <p class="secondP">occaecat cupidat atoreocca non proident,
                     and can sounor eocca <br>occaecat cupidat atoreocca non proident,podcaste</p>
             </div>
-            <div class="row Creators">
-                {% include 'common/eman_content.html' %}
-                
-            </div><!-- end item  -->
 
-            <div class="video">
-                <!-- start section video
-                1/frame
-                -->
-                <div class="container">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/AVqLvrO832g"
-                            allowfullscreen></iframe>
-                    </div>
+            <div class="row Creators">
+                {% for i in video %}
+                <div class="col-lg-4">
+                    <iframe src="{{i.video_url}}" style="border-radius: 10px; margin-bottom: 60px;" height="220vh" width="100%"  frameborder="0"></iframe>
+                
+                    <p>{{i.title}}</p>
                 </div>
+                {% endfor %}
+            </div>
             </div><!-- end video  -->
             {% include "common/footer.html" %}
 

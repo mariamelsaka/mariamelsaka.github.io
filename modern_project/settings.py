@@ -83,7 +83,7 @@ DATABASES = {
         # 'NAME': BASE_DIR / 'db.sqlite3',
         
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'egyscience_project',
+        'NAME': 'egyproject2',
         'HOST': 'localhost',
         'USER':'root',
         'PASSWORD': '',
@@ -129,13 +129,13 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'static') 
 
 STATIC_URL = '/static/'
-MEDIA_URL = '/img/'
 
 STATICFILES_DIRS = [# to let django know our static file location
     os.path.join(BASE_DIR, 'modern_project/static')
 ]
-MEDIA_ROOT = os.path.join(BASE_DIR, 'static/img')
 
+
+LOGOUT_REDIRECT_URL='login'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 

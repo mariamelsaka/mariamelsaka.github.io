@@ -7,7 +7,7 @@
   
   <link id="pagestyle" href="{% static 'dashboard/css/argon-dashboard.css' %}" rel="stylesheet" />
   <link id="pagestyle" href="{% static './css/Untitled-1.css' %}" rel="stylesheet" />
-  <title>Edit-Delete (Content Creators)2 </title>
+  <title>Video</title>
 </head>
 
 <body>
@@ -27,9 +27,9 @@
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
             <li class="breadcrumb-item text-sm"><a class="opacity-5 text-white" href="javascript:;">Pages</a></li>
-            <li class="breadcrumb-item text-sm text-white active" aria-current="page">Edit-Delete (Content Creators)2</li>
+            <li class="breadcrumb-item text-sm text-white active" aria-current="page">Video</li>
           </ol>
-          <h6 class="font-weight-bolder text-white mb-0">Edit-Delete (Content Creators)2</h6>
+          <h6 class="font-weight-bolder text-white mb-0">Video</h6>
         </nav>
         <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
           <div class="ms-md-auto pe-md-3 d-flex align-items-center">
@@ -44,7 +44,7 @@
           </div>
           <p class="cursor-pointer" style="color: white;">
             <ion-icon name="log-out-outline"></ion-icon>
-            Logout
+            <a href="{%url 'logout' %}">Logout</a>
         </p>
           <ul class="navbar-nav  justify-content-end">
             
@@ -74,10 +74,10 @@
 
     <!-- End Navbar number one -->
 
-    <!-- navbar number two -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+     <!-- navbar number two -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="dashboard">Dashboard</a>
+        
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -85,70 +85,69 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="add_video">Add Video</a>
+              <a class="nav-link active" aria-current="page" href="add_video_content">Add Video</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="add_podcast">Add Podcast</a>
+              <a class="nav-link" href="add_content_creators">Add (Content Creators) </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="add_admin">Add-Delete (Admin) </a>
+              <a class="nav-link" href="show_content_creators">Content Creators</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="add_content">Add (Content Creators) </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="edit_content">Edit-Delete (Content Creators) </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="edit_post">Edit-Delete (Video) </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="edit_post1">Edit-Delete (Podcast) </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="admin_profile">Profile Admin </a>
+              <a class="nav-link" href="show_video">Video</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!--END navbar two-->
-    <div class="container-fluid">
 
-      <!--  Add Podcast section -->
 
-      
 
-        <div class="col-lg-12 mt-3 mb-lg-0 mb-4 align-item-center">
-          <div class="card z-index-2 h-100">
-            <div class="card-header pb-0 pt-0 bg-transparent">
-              <div class="row">
-                <div class="col-lg-3">
-              <img src="{% static 'dashboard/img/images (11)1.png' %}"></div>
-              <div class="describtion col-lg-8">
-              <h4>Ahmed Samir ( Egygchology )
 
-              </h4>
-              <textarea>Ahmed Samir Ead @ahmedsamiread Founder and Host of the Egychology channel on
-                @Youtube . Mechanical Engineering PhD Candidate at
-                @UAlberta . Podcast Host. I enjoy learning about the world.
-                Assistant Professor at the University in Cairo.
-                He is studying Masters in Mechanical Engineering at the University of Alberta in Canada, and holds a Bachelor's degree in Mechanical Engineering from The University in Cairo. It offers educational videos in psychology, philosophy, biology, physics,
-                and mathematics, as well as videos, mechanics, higher quantum, smoking, and philosophical paradoxes, as well.
-                Founder of the educational channel "Egyology" 
-                on the channel "YouTube", the Arab Republic of Egypt.</textarea>
-                <button class="btn btn-dark">Save</button>
-                <button class="btn btn-dark">Back</button>
+    <div class="row superBox">
+      {% for i in videos %}
+      <div class="col-lg-4 mt-3 mb-lg-0 mb-4 align-item-center">
+        <div class="container-fluid">
+          <div class="box">
+            
+            <div class="card z-index-2 h-100">
+              <div class=" pb-0 pt-0 bg-transparent">
+                <div class="imagePost">
+                  <iframe src="{{i.video_url}}" style="border-radius: 10px; " height="220vh" width="100%"  frameborder="0"></iframe>
+                </div>
+                <div class="describtionPost">
+                  <h4>{{i.title}}
+                    <span> <br/>
+                    {{i.content_creator_name}}
 
+                    </span>
+                  </h4>
+                  <span>
+                     
+                      
+                      <button class="btn btn-dark">
+                        <a href="{{i.video_id}}" style="color:white">Open</a>
+                      </button>
+                 
+
+                    
+
+                  </span>
+                </div>
               </div>
-            </div>
 
             </div>
           </div>
         </div>
+      </div>
+      {% endfor %}
+    </div>
 
-        
-
+    
+     
+      
+           
 
 </body>
 

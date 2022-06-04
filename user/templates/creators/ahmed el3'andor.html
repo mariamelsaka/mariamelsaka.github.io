@@ -13,6 +13,7 @@
 
         <div class="conP">
             <div class="container">   
+                
                 <p class="firstP">Ahmed Al-GHhandour ( Al-Duhaih )</p>
                 <p class="secondP">
                     Ahmed Walid Mohamed Al-Ghandour is an Egyptian researcher and YouTube content creator, known by the name Al-Duhayh after the name of his YouTube channel, <br>and he is one of the prominent in the field of simplification of science or popular science (in English: pop-science), he studied biology at the Faculty of Science at the American University in Cairo, and he is now Master's researcher at the University of Hong Kong.
@@ -24,7 +25,6 @@
                 <a href="#">see more</a>
             </div>
         </div>
-
     </div>
 
     </div> 
@@ -46,24 +46,14 @@
             </div>
 
             <div class="row Creators">
-
-                {% include 'common/d7e7_content.html' %}
-        
-        </div><!-- end item  -->
-
-        <div class="video">
-            <!-- start section video
-                1/frame
-                -->
-            <div class="container">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/aqKHbCwhA9Y" allowfullscreen></iframe>
-                  </div>
+                {% for i in video %}
+                <div class="col-lg-4">
+                    <iframe src="{{i.video_url}}" style="border-radius: 10px; margin-bottom: 60px;" height="220vh" width="100%"  frameborder="0"></iframe>
+                
+                    <p>{{i.title}}</p>
+                </div>
+                {% endfor %}
             </div>
-        </div><!-- end video  -->
-
-    
-
         {% include "common/footer.html" %}
 
         {% endblock content %}
